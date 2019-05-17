@@ -1,0 +1,118 @@
+<html>
+<form action="" method="get" id="survey-form">
+<div id="container">
+<!-- #1: I can see a title with id="title" in H1 sized text. -->
+<h1 id="title">Steelers Nation Fan Survey</h1>
+<!-- #2: I can see a short explanation with id="description" in P sized text. -->
+<p id="description">This is a brief survey to determine your the level of your fanship. Please answer the following questions:</p>
+<!-- #3: I can see a form with id="survey-form". -->
+<section id="contact">
+	<!-- #4: Inside the form element, I am required to enter my name in a field with id="name" -->
+	<div class="form">
+    <label for="name" id="name-label">Name: </label>
+    <input type="text" name="name" placeholder="Awesome Fan" id="name" required>		
+  </div>
+	<!-- #5: Inside the form element, I am required to enter an email in a field with id="email" -->
+<!-- #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
+	<div class="form">
+		<label for="email" id="email-label">Email: </label>
+		<input type="email" name="email" placeholder="fan1@email.com" id="email" required>
+
+	</div>
+	<!--  #7: Inside the form, I can enter a number in a field with id="number". -->
+<!-- #8: If I enter non-numbers in the number input, I will see an HTML5 validation error. -->
+	<div class="form">
+		<label for="number" id="number-label">Phone: </label>
+		<input type="number" name="number" placeholder="000-000-0000" id="number" min="10" max="10" required>
+		</div>
+
+	</section>
+<!-- #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
+<!-- #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label". -->
+<!-- #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field. -->
+<!-- #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
+	
+<section id="facts">
+<div class="form">
+	<label for="dropdown">How many Super Bowls have the Steelers won?</label>
+		<select id="dropdown">
+    <option value="">--Choose one--</option>
+    <option type="dropdown" value="none"  id="dropdown">None</input>
+    <option value="3"  id="dropdown">3</option>
+    <option value="6"  id="dropdown">6</option>
+    <option value="7"  id="dropdown">7</option>
+    <option value="10"  id="dropdown">10</option>
+    <option value="All of them"  id="dropdown">All of them</option>
+</select>
+	</section>
+<!-- #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
+<section id="faves">
+	<label>Please select your preferred era:</label>
+  <div>
+    <input type="radio" id="contactChoice1"
+     name="contact" value="email">
+    <label for="contactChoice1">Steel Curtain</label>
+
+    <input type="radio" id="contactChoice2"
+     name="contact" value="phone">
+    <label for="contactChoice2">Killer B's</label>
+
+    <input type="radio" id="contactChoice3"
+     name="contact" value="mail">
+    <label for="contactChoice3">The Bus</label>
+  </div>
+	</section>
+<section id="faves">
+
+	<fieldset>
+  <legend>Choose your favorite offensive Steeler </legend>
+  <div>
+    <input type="checkbox" id="faves" name="off-faves" value="ben">
+    <label for="ben">Ben Roethlisberger</label>
+  </div>
+  <div>
+    <input type="checkbox" id="faves" name="off-faves" value="bettis">
+    <label for="bettis">Jerome Bettis</label>
+  </div>
+		<div>
+		<input type="checkbox" id="faves" name="off-faves" value="bradshaw">
+    <label for="bradshaw">Terry Bradshaw</label>
+  </div>
+		<div>
+	<input type="checkbox" id="faves" name="off-faves" value="ward">
+    <label for="ward">Hines Ward</label>
+  </div>
+		<div>
+	<input type="checkbox" id="faves" name="off-faves" value="juju">
+    <label for="juju">Ju Ju Smith-Schuster</label>
+  </div>
+		<div>
+<input type="checkbox" id="faves" name="off-faves" value="heath">
+    <label for="heath">Heath Miller</label>
+  </div>
+		<div>
+<input type="checkbox" id="faves" name="off-faves" value="ab">
+    <label for="ab">Antonio Brown</label>
+  </div>
+		<div>
+<input type="checkbox" id="faves" name="off-faves" value="harris">
+    <label for="harris">Franco Harris</label>
+  </div>
+</fieldset>
+
+	</section>
+<!-- #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
+	
+		<label>What's your favorite moment as a Steelers fan?
+	</label>
+		<textarea></textarea>
+
+	
+<!-- #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
+
+	<button type="submit" id="submit">Submit
+		</button>
+	
+</div>
+	</form>
+	</html>
